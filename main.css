@@ -1,8 +1,13 @@
 * {
     font-family: 'Alata', sans-serif;
 }
+
+body {
+    background: #ececcb;
+}
+
 h1 > b {
-    color: red;
+    color: rgba(0, 162, 255, 0.87);
 }
 .back {
     text-decoration: blink;
