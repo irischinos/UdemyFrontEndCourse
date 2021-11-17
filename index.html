@@ -2,36 +2,75 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="html5,udemy,learn code">
+    <meta name="author" content="Iris Ramos">
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UdemyFrontEndCourse</title>
 </head>
 <body>
     <header>
-        <h1>Best News Ever!</h1>
-        <h3>We don't care if it's accurate. We care that it's the BEST!</h3>
-    </header>
-    <main>
+        <h1>Best  P<b>i</b>zza Ever<b>!</b></h1>
+        <h3>Come and get some, homie!</h3>
+
+        <!--
+        //********* Para insertar un audio **********//
+
         <section>
-            <h2>About Me</h2>
-            <p>We've spent years in the news industry, and have found that, readers prefer the best news, not the accurate news.</p>
+            <audio width="600" src="assets/audioPizza.mp3" type="audio/mp3" controls autoplay loop></audio>
         </section>
+        -->
+
+    </header>
+
         <section>
-            <article>
-                <a href="#"><h3>Dog kidnaps clown</h3></a>
-                <p>In shocking turn of events, a dog has kidnapped a clown, and is demanding a helicopter and big mac.</p>
-                <br /><br />
-            </article>
-            <article>
-                <a href="#"><h3>New study confirms chocolate is in space.</h3></a>
-                <p>Have you ever wondered what outer space taste like? New study confirms that it tastes like chocolate. Without calories.</p>
-                <br /><br />
-            </article>
-            <article>
-                <a href="#"><h3>HTML5 saves the day</h3></a>
-                <p>Since it's introduction, there's been less div soup. </p>
-                <br /><br />
-            </article>
+            <video width="540" height="320" autoplay controls>
+                <source src="assets/pizzar.mp4" type="video/mp4">
+            </video>
+            <h6>Read more <a href="index2.html" class="here">news</a>!</h6>
+        </section>
+    
+        <section id="contact-form">
+            <h2>Please Order</h2>
+            <form method="POST" action="place-order.php">
+                <h4>Delivery</h4>
+                <input name="deliveryMethod" type="radio" value="delivery"> Delivery <br>
+                <input name="deliveryMethod" type="radio" value="pickup"> Pickup <br>
+
+
+                <h4>Address</h4>
+                <input name="address1" placeholder="Address Line 1" class="lg-input" type="text"><br>
+                <input name="address2" placeholder="Address Line 2" class="lg-input"><br>
+
+                <input name="city" placeholder="City" class="sm-input" type="text">
+                <input name="state" placeholder="State" class="sm-input" type="text"><br>
+                <input name="zip" placeholder="Zip Code" class="sm-input" type="text">
+                <br>
+                <br>
+                
+                <h4>Size</h4>
+                <select name="size" id="">
+                    <option value="12">12" - $13.99</option>
+                    <option value="16">16" - $16.99</option>
+                    <option value="18">18" - $19.99</option>
+                    <option value="72">72" - $149.99</option>
+                </select>
+
+                <h4>Ingredients</h4>
+                <input name="ingredient" type="checkbox" value="pepperoni"> Pepperoni <br>
+                <input name="ingredient" type="checkbox" value="salami"> Salami <br>
+                <input name="ingredient" type="checkbox" value="bacon"> Bacon <br>
+                <input name="ingredient" type="checkbox" value="sausage"> Italian Sausage <br>
+                <input name="ingredient" type="checkbox" value="onion"> Onions <br>
+                <input name="ingredient" type="checkbox" value="peppers"> Green pepper <br>
+                <br><br>
+                <button type="submit">Place order</button>
+            </form>
+            
         </section>
 
         <footer>

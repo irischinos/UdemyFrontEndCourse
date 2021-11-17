@@ -1,0 +1,21 @@
+* {
+    font-family: 'Alata', sans-serif;
+}
+h1 > b {
+    color: red;
+}
+.back {
+    text-decoration: blink;
+    font-size: 1.5em;
+    color: red;
+}
+.back:hover {
+    color: rgb(55, 0, 255);
+    cursor: pointer;
+}
+.here {
+    color: purple;
+}
+.here:hover {
+    color: rgb(55, 0, 255);
+}
