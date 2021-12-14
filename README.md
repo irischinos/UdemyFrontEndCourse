@@ -1,2 +1,2 @@
 # UdemyFrontEndCourse
-The knowledge results of this course.
+Knowledge put into practice... :)
